@@ -1,0 +1,9 @@
+POST http://localhost:3000/file/test-bucket/hello.txt
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="hello.txt"
+Content-Type: text/plain
+
+Hello, world!
+--WebAppBoundary--
